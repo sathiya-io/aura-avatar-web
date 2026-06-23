@@ -89,12 +89,28 @@ body {
   justify-content: space-between;
 }
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 18px;
   font-weight: 900;
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.3px;
 }
+.logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.footer-logo {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.footer-logo .logo-img { width: 24px; height: 24px; border-radius: 7px; }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a {
   color: var(--text-sub);
